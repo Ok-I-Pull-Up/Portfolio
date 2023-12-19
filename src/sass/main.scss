@@ -1,3 +1,5 @@
+@import './animation';
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -185,14 +187,15 @@ section:not(:last-child) {
 		height: auto;
 		width: 100%;
 		transition: transform 0.3s;
-		background: rgba($color: #fafcfb, $alpha: 0.05);
+		background: rgba($color: #ffffff, $alpha: 1);
 		border-radius: 20px;
 	}
 
 	.stack-icons--react {
 		height: 150px;
-		margin-top: 5rem;
+		margin-top: 2rem;
 		transition: transform 0.3s;
+		animation: IconRotate 30s infinite linear;
 	}
 
 	.stack-icons__container {
@@ -202,6 +205,12 @@ section:not(:last-child) {
 		align-items: center;
 		width: 30%;
 		margin-top: 5rem;
+
+		p {
+			font-size: 3rem;
+			margin-top: 2rem;
+			color: rgb(97, 219, 251);
+		}
 	}
 
 	.stack-icons:hover,

@@ -69,34 +69,19 @@ section:not(:last-child) {
   color: white;
   font-size: 1.5rem;
 }
-.navbar .links li a::after,
 .navbar .links li a::before {
   content: "";
   position: absolute;
-  bottom: -0.3em;
-  height: 3px;
-  width: 120%;
-  background-color: white;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-}
-.navbar .links li a::after {
+  bottom: 0;
   left: 50%;
-  transform-origin: left;
-}
-.navbar .links li a::before {
-  right: 50%;
-  transform-origin: right;
-}
-.navbar .links li a:hover::after,
-.navbar .links li a:hover::before {
-  transform: scaleX(0.4);
-}
-.navbar .links li a:hover::after {
-  transform-origin: left;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s;
 }
 .navbar .links li a:hover::before {
-  transform-origin: right;
+  width: 90%;
 }
 .navbar .navbar__mobile {
   display: none;
@@ -177,7 +162,7 @@ section:not(:last-child) {
   height: auto;
   width: 100%;
   transition: transform 0.3s;
-  background: white;
+  background: #fdfdfd;
   border-radius: 20px;
 }
 .About-me .stack-icons--react {
@@ -204,6 +189,47 @@ section:not(:last-child) {
   transform: scale(1.1);
 }
 
+.MyPortfolio {
+  height: 100vh;
+}
+
+.Portfolio-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Portfolio-container .one {
+  width: 100%;
+  margin-top: 10rem;
+  height: 50%;
+}
+.Portfolio-container .one .Collaborator--text {
+  color: lime;
+}
+.Portfolio-container .two {
+  width: 100%;
+}
+.Portfolio-container .card {
+  margin-bottom: 5rem;
+  display: flex;
+}
+.Portfolio-container .card p {
+  font-size: 20px;
+  color: white;
+  margin: 2rem 0 0 5rem;
+}
+.Portfolio-container .card img {
+  width: 50%;
+  border: 1px solid white;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Portfolio-container .three span {
+  color: red;
+}
+
 @media (max-width: 578px) {
   .navbar {
     height: 60px;
@@ -222,23 +248,53 @@ section:not(:last-child) {
   }
   .landing-page .landing-page__text {
     width: 100%;
-    padding: 5px;
+    padding: 0.5rem;
     margin-top: 10rem;
     text-align: center;
     align-items: center;
   }
   .landing-page .landing-page__text h1, .landing-page .landing-page__text p {
-    font-size: 3rem;
+    font-size: 1.8rem;
+    padding: 0 1rem 0 1rem;
   }
   .About-me .About__container {
+    padding: 3rem;
     text-align: center;
-    padding: 10rem 1rem 0 1rem;
+  }
+  .About-me .About__container h2, .About-me .About__container p {
+    font-size: 1.8rem;
   }
   .About-me .About__container .stack-icons__container {
-    width: 50%;
+    width: 80%;
   }
   .About-me .About__container .stack-icons__container .stack-icons {
     margin: 2rem;
-    font-size: 80px;
+    font-size: 8rem;
+  }
+  .MyPortfolio .Portfolio-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .MyPortfolio .Portfolio-container .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .MyPortfolio .Portfolio-container .card img {
+    margin: 3rem;
+    width: 80%;
+    min-height: 140px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .MyPortfolio .Portfolio-container .card p {
+    padding: 1rem 2rem 0 1rem;
+    font-size: 16px;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */

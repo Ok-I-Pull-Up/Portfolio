@@ -60,39 +60,23 @@ section:not(:last-child) {
 				color: white;
 				font-size: 1.5rem;
 			}
-			a::after,
+
 			a::before {
 				content: '';
 				position: absolute;
-				bottom: -0.3em;
-				height: 3px;
-				width: 120%;
-				background-color: white;
-				transform: scaleX(0);
-				transition: transform 0.5s;
-			}
-
-			a::after {
+				bottom: 0;
 				left: 50%;
-				transform-origin: left;
+				transform: translateX(-50%);
+				width: 0;
+				height: 2px;
+				background-color: #fff;
+				transition: width 0.3s;
 			}
 
-			a::before {
-				right: 50%;
-				transform-origin: right;
-			}
-
-			a:hover::after,
-			a:hover::before {
-				transform: scaleX(0.4);
-			}
-
-			a:hover::after {
-				transform-origin: left;
-			}
-
-			a:hover::before {
-				transform-origin: right;
+			a:hover {
+				&::before {
+					width: 90%;
+				}
 			}
 		}
 	}
@@ -187,7 +171,7 @@ section:not(:last-child) {
 		height: auto;
 		width: 100%;
 		transition: transform 0.3s;
-		background: rgba($color: #ffffff, $alpha: 1);
+		background: rgba($color: #fdfdfd, $alpha: 1);
 		border-radius: 20px;
 	}
 
@@ -220,6 +204,55 @@ section:not(:last-child) {
 }
 
 // Portfolio //
+
+.MyPortfolio {
+	height: 100vh;
+}
+
+.Portfolio-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.one {
+		width: 100%;
+		margin-top: 10rem;
+		height: 50%;
+
+		.Collaborator--text {
+			color: lime;
+		}
+	}
+
+	.two {
+		width: 100%;
+	}
+
+	.card {
+		margin-bottom: 5rem;
+		display: flex;
+		p {
+			font-size: 20px;
+			color: white;
+			margin: 2rem 0 0 5rem;
+		}
+
+		img {
+			width: 50%;
+			border: 1px solid white;
+			object-fit: cover;
+		}
+
+
+	}
+
+	.three {
+		span {
+			color: red;
+		}
+	}
+}
 
 @import './small';
 @import './medium';

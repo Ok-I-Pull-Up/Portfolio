@@ -24,7 +24,7 @@ a {
 body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
-  background-image: url("/src/assets/stars-bg.jpg");
+  background-image: url("../src/assets/stars-bg.jpg");
   background-size: cover;
 }
 

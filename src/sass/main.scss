@@ -48,7 +48,12 @@ section:not(:last-child) {
 	background-color: rgb(17, 17, 17);
 	height: 80px;
 	margin: 0 auto;
-	.links {
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__links {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -83,7 +88,7 @@ section:not(:last-child) {
 
 	.navbar__mobile {
 		display: none;
-		.navbar__mobile-burger {
+		&--burger {
 			padding: 2px;
 			margin-right: 1rem;
 			.fa-bars {
@@ -93,11 +98,6 @@ section:not(:last-child) {
 			}
 		}
 	}
-}
-
-.container {
-	display: flex;
-	justify-content: space-between;
 }
 
 .fa-code {
@@ -117,7 +117,7 @@ section:not(:last-child) {
 	min-height: 1000px;
 	display: flex;
 
-	.landing-page__text {
+	&__text {
 		display: flex;
 		flex-direction: column;
 		width: 50%;
@@ -207,49 +207,47 @@ section:not(:last-child) {
 
 .MyPortfolio {
 	height: 100vh;
-}
 
-.Portfolio-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	.one {
-		width: 100%;
-		margin-top: 10rem;
-		height: 50%;
+	.Portfolio__container {
+		&--cards {
+			margin-bottom: 5rem;
+			display: flex;
+			p {
+				font-size: 20px;
+				color: white;
+				margin: 2rem 0 0 5rem;
+			}
 
-		.Collaborator--text {
-			color: lime;
+			img {
+				width: 50%;
+				border: 1px solid white;
+				object-fit: cover;
+			}
 		}
-	}
 
-	.two {
 		width: 100%;
-	}
-
-	.card {
-		margin-bottom: 5rem;
 		display: flex;
-		p {
-			font-size: 20px;
-			color: white;
-			margin: 2rem 0 0 5rem;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		.one {
+			width: 100%;
+			margin-top: 10rem;
+			height: 50%;
+
+			.Collaborator--text {
+				color: lime;
+			}
 		}
 
-		img {
-			width: 50%;
-			border: 1px solid white;
-			object-fit: cover;
+		.two {
+			width: 100%;
 		}
 
-
-	}
-
-	.three {
-		span {
-			color: red;
+		.three {
+			span {
+				color: red;
+			}
 		}
 	}
 }

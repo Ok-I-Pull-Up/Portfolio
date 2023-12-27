@@ -1,12 +1,12 @@
 @media (max-width: 578px) {
 	.navbar {
-		.container {
+		&__container {
 			.logo {
 				margin-left: 2rem;
 			}
 		}
 		height: 60px;
-		.links {
+		&__links {
 			li {
 				a {
 					display: none;
@@ -54,11 +54,10 @@
 	}
 
 	.MyPortfolio {
-		.Portfolio-container {
+		.Portfolio__container {
 			display: flex;
 			flex-direction: column;
-			.card {
-				// padding: 1rem;
+			&--cards {
 				display: flex;
 				flex-direction: column;
 				justify-content: center;

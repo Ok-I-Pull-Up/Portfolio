@@ -260,6 +260,17 @@ section:not(:last-child) {
   .landing-page {
     min-height: 700px;
   }
+  .landing-page__contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing-page__contact .landing-page__socialMedia--icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
   .landing-page .landing-page__text {
     width: 100%;
     padding: 0.5rem;
@@ -267,15 +278,17 @@ section:not(:last-child) {
     text-align: center;
     align-items: center;
   }
-  .landing-page .landing-page__text h1, .landing-page .landing-page__text p {
-    font-size: 1.8rem;
+  .landing-page .landing-page__text h1,
+  .landing-page .landing-page__text p {
+    font-size: 2.8rem;
     padding: 0 1rem 0 1rem;
   }
   .About-me .About__container {
     padding: 3rem;
     text-align: center;
   }
-  .About-me .About__container h2, .About-me .About__container p {
+  .About-me .About__container h2,
+  .About-me .About__container p {
     font-size: 1.8rem;
   }
   .About-me .About__container .stack-icons__container {

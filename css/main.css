@@ -76,12 +76,12 @@ section:not(:last-child) {
 .navbar__links li a::before {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
-  width: 0;
+  bottom: -3px;
   height: 2px;
-  background-color: #fff;
+  width: 0;
+  transform: translateX(-50%);
+  background-color: #00ff00;
   transition: width 0.3s;
 }
 .navbar__links li a:hover::before {
@@ -114,6 +114,22 @@ section:not(:last-child) {
 .landing-page {
   min-height: 1000px;
   display: flex;
+}
+.landing-page .landing-page__contact {
+  display: flex;
+}
+.landing-page__socialMedia--icons {
+  margin: 60rem 0 0 30rem;
+  font-size: 6rem;
+}
+.landing-page__socialMedia--icons i {
+  color: white;
+  padding: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.landing-page__socialMedia--icons i:hover {
+  transform: scale(1.2);
+  background-color: rgba(24, 253, 3, 0.658);
 }
 .landing-page__text {
   display: flex;
@@ -154,7 +170,7 @@ section:not(:last-child) {
   font-size: 20px;
 }
 .About-me span {
-  color: lime;
+  color: #00ff00;
   font-size: 20px;
 }
 .About-me .stack-icons {
@@ -166,7 +182,7 @@ section:not(:last-child) {
 }
 .About-me .stack-icons--react {
   height: 150px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   transition: transform 0.3s;
   animation: IconRotate 30s infinite linear;
 }
@@ -219,7 +235,7 @@ section:not(:last-child) {
   height: 50%;
 }
 .MyPortfolio .Portfolio__container .one .Collaborator--text {
-  color: lime;
+  color: #00ff00;
 }
 .MyPortfolio .Portfolio__container .two {
   width: 100%;

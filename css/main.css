@@ -237,6 +237,12 @@ section:not(:last-child) {
 .MyPortfolio .Portfolio__container .one .Portfolio__collaborator--text {
   color: #00ff00;
 }
+.MyPortfolio .Portfolio__container .one a {
+  width: 100%;
+}
+.MyPortfolio .Portfolio__container .one a img {
+  width: 100%;
+}
 .MyPortfolio .Portfolio__container .two {
   width: 100%;
 }

@@ -261,6 +261,13 @@ section:not(:last-child) {
 			.Portfolio__collaborator--text {
 				color: $secondary-color;
 			}
+
+			a {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
 		}
 
 		.two {

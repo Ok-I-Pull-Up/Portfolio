@@ -177,7 +177,6 @@ section:not(:last-child) {
   height: auto;
   width: 100%;
   transition: transform 0.3s;
-  background: #fdfdfd;
   border-radius: 20px;
 }
 .About-me .stack-icons--react {

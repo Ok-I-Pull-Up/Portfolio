@@ -185,6 +185,11 @@ section:not(:last-child) {
   transition: transform 0.3s;
   animation: IconRotate 30s infinite linear;
 }
+.About-me .stack-icons--seo {
+  height: 150px;
+  margin: 5rem 3rem;
+  transition: transform 0.3s;
+}
 .About-me .stack-icons__container {
   display: flex;
   flex-direction: column;
@@ -199,7 +204,8 @@ section:not(:last-child) {
   color: rgb(97, 219, 251);
 }
 .About-me .stack-icons:hover,
-.About-me .stack-icons--react:hover {
+.About-me .stack-icons--react:hover,
+.About-me .stack-icons--seo:hover {
   transform: scale(1.1);
 }
 

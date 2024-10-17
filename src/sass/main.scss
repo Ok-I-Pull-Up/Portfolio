@@ -204,6 +204,12 @@ section:not(:last-child) {
 		animation: IconRotate 30s infinite linear;
 	}
 
+	.stack-icons--seo {
+		height: 150px;
+		margin: 5rem 3rem;
+		transition: transform 0.3s;
+	}
+
 	.stack-icons__container {
 		display: flex;
 		flex-direction: column;
@@ -220,7 +226,8 @@ section:not(:last-child) {
 	}
 
 	.stack-icons:hover,
-	.stack-icons--react:hover {
+	.stack-icons--react:hover,
+	.stack-icons--seo:hover {
 		transform: scale(1.1);
 	}
 }
